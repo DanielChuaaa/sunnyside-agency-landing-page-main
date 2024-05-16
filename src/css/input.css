@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.imageHeaderDekstop {
+  @apply sm:block hidden;
+}
+
+.imageHeaderMobile {
+  @apply sm:hidden block  w-full;
+}
+
+nav {
+  @apply absolute top-0 w-full sm:px-8 px-5;
+}
+
+.navWrapper {
+  @apply relative flex justify-between items-center pt-6 z-10;
+}
+
+.navLink {
+  @apply sm:flex hidden items-center sm:gap-10 gap-6 font-ffp text-white;
+}
+
+.navLink-active {
+  @apply absolute flex flex-col py-8 text-Grayishblue font-semibold top-20 bg-white w-full;
+}
+
+.hamburgerButton {
+  @apply sm:hidden;
+}
+
+.navButton {
+  @apply text-black hover:text-white font-bold font-ffs py-4 px-7 sm:bg-white hover:bg-btHov transition-all ease-linear delay-75 bg-Yellow rounded-full;
+}
+
+.triangleNav {
+  @apply absolute right-0 top-14 hidden;
+}
+
+.triangleNav {
+  border-left: 63px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 54px solid #ffffff;
+}
+
+.triangleNav-active {
+  @apply block;
+}
+
+.headerText {
+  @apply absolute top-0 flex flex-col justify-center items-center w-full mt-40;
+}
+
+.headerText h1 {
+  @apply sm:text-5xl text-4xl text-white text-center font-black font-ffs tracking-widest sm:max-w-mxw20 max-w-mxw14;
+}
+
+.arrowDown {
+  @apply mt-20;
+}
+
+.gridWrapper {
+  @apply grid sm:grid-cols-2 grid-cols-gridcols0;
+}
+
+.gridTextOne {
+  grid-area: 2 / 2;
+}
+
+@media (min-width: 768px) {
+  .gridTextOne {
+    grid-area: 1 / 1;
+  }
+}
+
+.gridTextOne {
+  @apply flex flex-col sm:items-start items-center m-auto sm:px-8 px-4   sm:py-0 py-12;
+}
+
+.gridTextOne h2 {
+  @apply text-3xl text-Verydarkdesaturatedblue font-black font-ffs sm:text-left text-center max-w-mxw14;
+}
+
+.gridTextOne p {
+  @apply text-Darkgrayishblue font-ffp font-semibold sm:text-left text-center mt-6 max-w-mxw43;
+}
+
+.gridTextOne a {
+  @apply sm:text-xl text-base text-Verydarkdesaturatedblue font-black font-ffs sm:text-left text-center mt-6;
+}
+
+.gridTextOne a:after {
+  content: "";
+  position: relative;
+  background: hsl(51, 100%, 86%);
+  display: flex;
+  top: -8px;
+  left: -8px;
+  width: 20%;
+  padding: 0.3rem;
+  border-radius: 100vw;
+  z-index: -1;
+}
+
+.gridTextOne a:hover:after {
+  background: hsl(51, 100%, 49%);
+  transition: width 1s;
+  width: 110%;
+}
+
+.gridEgg {
+  grid-area: 1 / 2;
+}
+
+@media (min-width: 768px) {
+  .gridEgg {
+    grid-area: 1 / 2;
+  }
+}
+
+.gridTextTwo {
+  grid-area: 4 / 2;
+}
+
+@media (min-width: 768px) {
+  .gridTextTwo {
+    grid-area: 2 / 2;
+  }
+}
+
+.gridTextTwo {
+  @apply flex flex-col sm:items-start items-center m-auto sm:px-8 px-4 sm:py-0 py-12;
+}
+
+.gridTextTwo h2 {
+  @apply text-3xl text-Verydarkdesaturatedblue font-black font-ffs sm:text-left text-center max-w-mxw14;
+}
+
+.gridTextTwo p {
+  @apply text-Darkgrayishblue font-ffp font-semibold sm:text-left text-center mt-6 max-w-mxw43;
+}
+
+.gridTextTwo a {
+  @apply sm:text-xl text-base text-Verydarkdesaturatedblue font-black font-ffs sm:text-left text-center mt-6;
+}
+
+.gridTextTwo a:after {
+  content: "";
+  position: relative;
+  background: hsl(7, 99%, 70%);
+  display: flex;
+  top: -8px;
+  left: -6px;
+  width: 20%;
+  padding: 0.3rem;
+  border-radius: 100vw;
+  z-index: -1;
+}
+
+.gridTextTwo a:hover:after {
+  background: hsl(7, 99%, 90%);
+  transition: width 1s;
+  width: 110%;
+}
+
+.gridPinkCup {
+  grid-area: 3 / 2;
+}
+
+@media (min-width: 768px) {
+  .gridPinkCup {
+    grid-area: 2 / 1;
+  }
+}
+
+.gridCherry {
+  grid-area: 6 / 2;
+}
+
+@media (min-width: 768px) {
+  .gridCherry {
+    grid-area: 3 / 1;
+  }
+}
+
+.gridCherryText {
+  @apply relative lg:-top-48 sm:-top-40 -top-48 flex flex-col items-center text-center sm:px-8 px-4;
+}
+
+.gridCherryText h2 {
+  @apply text-3xl text-Darkdesaturatedcyan font-black font-ffs;
+}
+
+.gridCherryText p {
+  @apply text-Darkdesaturatedcyan font-semibold font-ffp mt-6 sm:max-w-mxw36 max-w-mxw37;
+}
+
+.gridCherryText {
+  grid-area: 7 / 2;
+}
+
+@media (min-width: 768px) {
+  .gridCherryText {
+    grid-area: 5 / 1;
+  }
+}
+
+.gridOrange {
+  grid-area: 7 / 2;
+}
+
+@media (min-width: 768px) {
+  .gridOrange {
+    grid-area: 3 / 2;
+  }
+}
+
+.gridOrangeText {
+  @apply relative lg:-top-48 sm:-top-40 -top-48 flex flex-col items-center text-center sm:px-8 px-4;
+}
+
+.gridOrangeText h2 {
+  @apply text-3xl text-Darkblue font-black font-ffs;
+}
+
+.gridOrangeText p {
+  @apply text-Darkblue font-semibold font-ffp mt-6 sm:max-w-mxw36 max-w-mxw37;
+}
+
+.gridOrangeText {
+  grid-area: 9 / 2;
+}
+
+@media (min-width: 768px) {
+  .gridOrangeText {
+    grid-area: 5 / 2;
+  }
+}
+
+.clientTestimonial {
+  @apply grid justify-center px-6 sm:-translate-y-6 -translate-y-translatey18;
+}
+
+.clientTestimonial h2 {
+  @apply sm:text-2xl 394:text-xl text-base text-center text-Grayishblue font-ffs font-black tracking-tracking02;
+}
+
+.clientWrapper {
+  @apply flex sm:flex-row flex-col sm:pt-20 pt-14 sm:gap-4 gap-16;
+}
+
+.client {
+  @apply flex flex-col items-center;
+}
+
+.clientImg {
+  @apply w-1/3 rounded-full;
+}
+
+.clientP {
+  @apply text-center text-Verydarkdesaturatedblue font-medium sm:mt-12 mt-8 sm:max-w-mxw38 max-w-mxw35;
+}
+
+.clientName {
+  @apply text-xl text-Verydarkdesaturatedblue font-black font-ffs sm:mt-16 mt-8;
+}
+
+.clientJob {
+  @apply text-Darkgrayishblue font-ffp font-medium mt-2;
+}
+
+.gadoImg {
+  @apply sm:flex grid grid-cols-2 sm:pt-24 pt-6;
+}
+
+.footerWrapper {
+  @apply grid justify-items-center items-center py-14 bg-lightCyan;
+}
+
+.logoFooter {
+  @apply sm:w-32 w-40;
+}
+
+.footerLink {
+  @apply flex gap-8 mt-8;
+}
+
+.footerLink a {
+  @apply text-Darkdesaturatedcyan hover:text-white transition ease-in-out  font-medium font-ffp;
+}
+
+.socialMedia {
+  @apply flex gap-6 sm:mt-12 mt-16 cursor-pointer;
+}
